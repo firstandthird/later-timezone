@@ -1,7 +1,6 @@
-const later = require('later');
 const moment = require('moment-timezone');
 
-module.exports.timezone = (timezone) => {
+module.exports.timezone = (later, timezone) => {
   if (timezone) {
     later.setTimeout = (fn, sched) => {
       const s = later.schedule(sched);

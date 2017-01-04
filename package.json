@@ -21,10 +21,7 @@
   "devDependencies": {
     "eslint": "^3.9.1",
     "eslint-config-firstandthird": "^3.0.2",
-    "eslint-plugin-import": "^2.1.0",
-    "tap-spec": "^4.1.1",
-    "tape": "^4.5.1",
-    "tape-watch": "^1.3.0"
+    "eslint-plugin-import": "^2.1.0"
   },
   "eslintConfig": {
     "extends": "firstandthird"

@@ -4,8 +4,6 @@
   "description": "Modify laterjs (https://bunkat.github.io/later/) to use timezones",
   "main": "index.js",
   "scripts": {
-    "test": "tape test/*.js | tap-spec",
-    "watch": "tape-watch test/*.js -p tap-spec",
     "lint": "eslint ."
   },
   "repository": {

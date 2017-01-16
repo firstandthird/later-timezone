@@ -10,6 +10,7 @@ const getMinutes = (val) => {
   }
   return mins;
 };
+
 test('will over-ride later.setTimeout method', (t) => {
   t.plan(1);
   const later = require('later');
@@ -55,7 +56,7 @@ test('future timezone will be in the future', (t) => {
   later = modifyLater(later, futureZone);
   // a local timeout that is 1 minute in the past won't fire
   // because it's not yet that time in the future timezone:
-  const string = `after ${new Date().getHours()}:${getMinutes(-1) } today`;
+  const string = `after ${new Date().getHours()}:${getMinutes(-1)} today`;
   const sched = later.parse.text(string);
   const controller = later.setTimeout(() => {
     t.fail();

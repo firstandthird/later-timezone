@@ -1,3 +1,4 @@
+'use strict';
 const test = require('tape');
 const moment = require('moment-timezone');
 const modifyLater = require('../index.js').timezone;

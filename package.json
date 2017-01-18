@@ -1,0 +1,36 @@
+{
+  "name": "later-timezone",
+  "version": "1.0.0",
+  "description": "Modify laterjs (https://bunkat.github.io/later/) to use timezones",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js | tap-spec",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firstandthird/later-timezone.git"
+  },
+  "author": "Greg Allen <code@firstandthird.com> (http://firstandthird.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/firstandthird/later-timezone/issues"
+  },
+  "homepage": "https://github.com/firstandthird/later-timezone#readme",
+  "devDependencies": {
+    "eslint": "^3.9.1",
+    "eslint-config-firstandthird": "^3.0.2",
+    "eslint-plugin-import": "^2.1.0",
+    "later": "^1.2.0",
+    "lodash": "^4.17.4",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.5.1",
+    "tape-watch": "^1.3.0"
+  },
+  "eslintConfig": {
+    "extends": "firstandthird"
+  },
+  "dependencies": {
+    "moment-timezone": "^0.5.11"
+  }
+}

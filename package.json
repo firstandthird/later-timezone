@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/firstandthird/later-timezone#readme",
   "devDependencies": {
-    "eslint": "^3.9.1",
+    "eslint": "^3.16.0",
     "eslint-config-firstandthird": "^3.0.2",
     "eslint-plugin-import": "^2.1.0",
     "later": "^1.2.0",

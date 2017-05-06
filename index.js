@@ -29,6 +29,8 @@ module.exports.timezone = (later, timezone) => {
       if (diff < 1000) {
         diff = nextTime[1] ? nextTime[1].getTime() - now : 1000;
       }
+      // expose the time (with timezone) at which the process will first execute:
+      later.firstRunMoment = moment(new Date().getTime() + diff).tz(timezone);
       if (diff < 2147483647) {
         t = setTimeout(fn, diff);
       } else {

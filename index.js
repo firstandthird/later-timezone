@@ -13,7 +13,7 @@ module.exports.timezone = (later, timezone) => {
       const now = new Date();
       // get a timezone-adjusted 'now':
       const zone = moment.tz.zone(timezone);
-      const offset = zone.offset(now);
+      const offset = zone.utcOffset(now);
       const adjustedNow = new Date(now.getTime() - (60000 * offset));
       // use the timezone-adjusted 'now' to generate the list of nextTimes
       // that laterjs will schedule. then un-adjust each of those next times

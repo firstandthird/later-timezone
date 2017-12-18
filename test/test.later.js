@@ -37,7 +37,7 @@ test('future timezone will be in the future', (t) => {
   const getOffset = (zoneName) => {
     const now = new Date();
     const zone = moment.tz.zone(zoneName);
-    return zone.offset(now);
+    return zone.utcOffset(now);
   };
   let later = require('later');
   const localTimezone = moment.tz.guess();
@@ -73,7 +73,7 @@ test('past timezone will be in the past', (t) => {
   const getOffset = (zoneName) => {
     const now = new Date();
     const zone = moment.tz.zone(zoneName);
-    return zone.offset(now);
+    return zone.utcOffset(now);
   };
   let later = require('later');
   const localTimezone = moment.tz.guess();

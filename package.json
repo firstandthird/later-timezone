@@ -31,6 +31,6 @@
     "extends": "firstandthird"
   },
   "dependencies": {
-    "moment-timezone": "^0.5.11"
+    "moment-timezone": "^0.5.14"
   }
 }
